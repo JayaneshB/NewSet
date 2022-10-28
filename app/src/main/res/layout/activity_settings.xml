@@ -9,6 +9,43 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/back_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="336dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/submit_btn"
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="31dp"
+                android:background="@drawable/ic_submit_btn"
+                android:src="@drawable/ic_baseline_done_24" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="100dp">
 
@@ -128,6 +165,7 @@
         </RelativeLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -137,15 +175,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="97dp"
+                android:layout_height="29dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/gender"
+                android:textColor="@color/dark_grey"
+                android:textSize="20sp" />
 
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="178dp"
+                android:layout_marginBottom="251dp"
+                android:background="@drawable/ic_gender_bg"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_male_24" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="111dp"
+                android:layout_marginBottom="251dp"
+                android:background="@drawable/ic_btn_bg"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_female_24" />
 
 
         </RelativeLayout>
-
-
-
-
-
 
     </LinearLayout>
 
@@ -159,7 +226,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/name"
+                android:id="@+id/age"
                 android:layout_width="96dp"
                 android:layout_height="70dp"
                 android:layout_alignParentStart="true"
@@ -168,12 +235,12 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="@string/userName"
+                android:text="@string/age"
                 android:textColor="@color/dark_grey"
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/age_index"
                 android:layout_width="199dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -185,13 +252,14 @@
                 android:gravity="center_horizontal"
                 android:inputType="textPersonName"
                 android:paddingBottom="15dp"
-                android:text="@string/name"
+                android:text="@string/_age"
                 android:textColor="@color/white" />
 
 
         </RelativeLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -235,7 +303,5 @@
         </RelativeLayout>
 
     </LinearLayout>
-
-
 
 </FrameLayout>
