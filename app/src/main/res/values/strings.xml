@@ -17,4 +17,5 @@
     <string name='email'>Email</string>
     <string name="_age">28</string>
     <string name="mail_id">clerisseau@gmail.com</string>
+    <string name="about">About</string>
 </resources>
