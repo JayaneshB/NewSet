@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:id="@+id/l_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="180dp"
+        tools:ignore="InvalidId">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profile"
+                android:layout_width="92dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_btn_bg"
+                android:padding="10dp"
+                android:src="@drawable/ic_profile" />
+
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/profile"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="SmallSp,UnknownId" />
+
+            <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/profile"
+                    android:layout_below="@+id/profile_name"
+                    android:text="@string/name"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    tools:ignore="SmallSp,UnknownId" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/redirect"
+                android:layout_width="40dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/ic_btn_bg"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right"
+                tools:ignore="SpeakableTextPresentCheck" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="350dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_language"
+                android:padding="20dp"
+                android:src="@drawable/ic_baseline_language_24" />
+
+            <TextView
+                android:id="@+id/lang_l"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/ic_lang"
+                android:text="@string/language"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/option"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/lang_l"
+                android:gravity="start"
+                android:text="@string/option"
+                android:textColor="@color/dark_grey"
+                android:textSize="15sp"
+                tools:ignore="UnknownId" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/button3"
+                android:layout_width="47dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_toRightOf="@+id/option"
+                android:background="@drawable/ic_btn_bg"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

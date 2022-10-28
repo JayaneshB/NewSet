@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SettingsDesign</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="name">David Clerisseau</string>
+    <string name="help">Help</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notification">Notification</string>
+    <string name="language">Language</string>
+    <string name="option">English</string>
+    <string name="preference">On</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="photo">Photo</string>
+    <string name="userName">Name</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name='email'>Email</string>
+    <string name="_age">28</string>
+    <string name="mail_id">clerisseau@gmail.com</string>
+</resources>
