@@ -7,6 +7,62 @@
     android:background="@color/violet"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Account"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="42dp"
+                android:gravity="start"
+                android:paddingBottom="5dp"
+                android:text="@string/account"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
 
     <LinearLayout
 
@@ -73,6 +129,32 @@
                 android:src="@drawable/ic_baseline_keyboard_arrow_right"
                 tools:ignore="SpeakableTextPresentCheck" />
             
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="280dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="42dp"
+                android:gravity="start"
+                android:paddingBottom="5dp"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
         </RelativeLayout>
 
     </LinearLayout>
@@ -301,11 +383,5 @@
         </RelativeLayout>
 
     </LinearLayout>
-
-
-
-
-
-
 
 </FrameLayout>
